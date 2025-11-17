@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: travel-backend
+spec:
+  selector:
+    app: travel-backend
+  ports:
+    - port: 8080
+      targetPort: {{ .Values.backend.containerPort }}
+  type: ClusterIP
