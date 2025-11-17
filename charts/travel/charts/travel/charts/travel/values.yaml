@@ -1,0 +1,9 @@
+frontend:
+  image: "yourdockerhubusername/travel-frontend:1.0"
+  containerPort: 80
+  replicas: 1
+
+backend:
+  image: "yourdockerhubusername/travel-backend:1.0"
+  containerPort: 8080
+  replicas: 1
